@@ -11,36 +11,81 @@
   <body>
     <nav>
       <div class="search-container">
-        <input
-          type="search"
-          id="search-input"
-          placeholder="Search reviews, shows, or users..."
-          aria-label="Search reviews"
-        >
+        <input type="text" id="search-input" placeholder="Search travel destinations that are available..."  aria-label="Search destinations">
       </div>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="categories.html">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
-      <button id="theme-toggle" class="theme-btn" type="button">
-        <span id="theme-icon" aria-hidden="true">🌙</span>
-        <span id="theme-text">Dark Mode</span>
-      </button>
     </nav>
 
     <header>
-      <h1>About the Creator</h1>
-      <p>
-        The creator of Verdikt is a passionate individual who believes in the power of honest reviews.
-        With a background in technology and a deep understanding of user needs, they set out to create
-        a platform that delivers transparent and actionable feedback.
-      </p>
-      <p>Favorite genre on this website is Anime</p>
-      <p>And their favorite show is Re:Zero</p>
-      <div>
-        <img id="AboutImg" src="Images/ReZeroCast.webp" alt="Re:Zero" width="300">
-      </div>
+      <h1>Contact Us</h1>
+      <p>Have questions or feedback? We'd love to hear from you!</p>
+      <p>Get in touch with our team and let us know how we can improve your experience.</p>
+      <ul class="contact-info">
+        <li>
+          <a href="mailto:42779@Ocvts.org" aria-label="Email us">Email</a>
+        </li>
+        <li>
+          <a href="https://github.com/GitReigenOC" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        </li>
+      </ul>
     </header>
+
+    <section>
+      <h2 class="section-title">Contact Form</h2>
+      <form
+        id="contact-form"
+        action="https://formspree.io/f/xwlvyeyk"
+        method="POST"
+        novalidate
+      >
+        <input type="hidden" name="_subject" value="New message from Verdikt">
+
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            required
+            aria-describedby="name-error"
+          >
+          <p class="field-error hidden" id="name-error"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+            aria-describedby="email-error"
+          >
+          <p class="field-error hidden" id="email-error"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            aria-describedby="message-error"
+          ></textarea>
+          <p class="field-error hidden" id="message-error"></p>
+        </div>
+        <p class="form-status hidden" id="form-status" role="status"></p>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
   </body>
 </html>
