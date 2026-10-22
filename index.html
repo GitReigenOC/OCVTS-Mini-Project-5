@@ -6,7 +6,7 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="" type="image/png">
-    <script src="Java.js" defer></script>
+    <script src="java.js" defer></script>
   </head>
   <body>
     <nav>
@@ -19,13 +19,42 @@
     <header>
       <h1>Escodia</h1>
     </header>
-    <section>
-      <h1>Featured Travel Destinations</h1>
-        <div class="F-destinations">
-            <h3>Genre: Anime</h3>
-            <img src="Images/Shibuya.webp" alt="Shibuya Aftermath (JJK)">
-            <p>This resort has a crisp estimate baseline domain-wide thermal or thermobaric effects around 2,500 °C, while extreme outlier calculations stretch upwards of 8,000 °C to 800,000 °C. A perfect place for tans and amazing sights to see. Click for more details.</p>
-        </div>
-    </section>
+      <section>
+        <h1>Featured Travel Destinations</h1>
+          <div class="F-destinations" onclick="ToggleDetails()" role="button" tabindex="0">
+            <h1>Shibuya</h1>
+              <h3>Genre: Anime</h3>
+              <img src="Images/Shibuya.webp" alt="Shibuya Aftermath (JJK)">
+              <p>This resort has a crisp estimate baseline domain-wide thermal or thermobaric effects around 2,500 °C, while extreme outlier calculations stretch upwards of 8,000 °C to 800,000 °C. A perfect place for tans and amazing sights to see.</p>
+              <span class="Details">Click for more details.</span>
+          </div>
+          <div id="slide-d" class="Drawer">
+            <button class="close-btn" onclick="event.stopPropagation(); ToggleDetails();">&times;</button>
+          <div class="Drawer-stuff">
+            <h1>Sukuna is hosting an event that as well</h1>
+            <h2>Ready to enjoy a time of festevities with a humble host</h2>
+            <p>Destination is at Tokyo, Japan</p>
+            <p>Shibuya is a vibrant commercial and entertainment hub in Tokyo featuring iconic crosswalks, panoramic viewpoints, pop culture stores, and diverse dining</p>
+            <img src="Images/Shibuya.webp" alt="Re:Zero">
+          </section>
+      <section>
+            <div>
+              <div class="F-destinations" onclick="ToggleDetails2()" role="button" tabindex="0">
+              <h1>Luginica</h1>
+              <h3>Genre: Anime</h3>
+              <img src="Images/Shibuya.webp" alt="Re:Zero">
+              <p>This resort has a crisp estimate baseline domain-wide thermal or thermobaric effects around 2,500 °C, while extreme outlier calculations stretch upwards of 8,000 °C to 800,000 °C. A perfect place for tans and amazing sights to see.</p>
+              <span class="Details">Click for more details</span>
+            </div>
+          <div id="slide-d2" class="Drawer2">
+            <button class="close-btn" onclick="event.stopPropagation(); ToggleDetails2();">&times;</button>
+          <div class="Drawer-stuff2">
+            <h1>Satella's blessing will be invoked on you after you get isekai'd here</h1>
+            <h2>Time for an amazing time where you get to start from zero (Many times)</h2>
+            <p>Destination is at Luginica, Beyond the Waterfall</p>
+            <p>Luginica is a diversed place to enjoy, with thugs.. I mean archbishops.. I mean maw beasts.. I MEAN nice and law abiding citizens all around</p>
+          </div>
+          </div>
+      </section>
   </body>
 </html>
