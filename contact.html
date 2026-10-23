@@ -3,81 +3,57 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verdikt</title>
+    <title>Contact | Escodia</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="" type="image/png">
+    <link rel="icon" href="Images/LogoE.png" type="image/png">
     <script src="java.js" defer></script>
   </head>
   <body>
     <nav>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="categories.html">Categories</a></li>
-        <li><a href="index.html">Home</a></li>
-      </ul>
+      <div class="nav-inner">
+        <a class="nav-logo" href="index.html" aria-label="Escodia home">
+          <img src="Images/LogoE.png" alt="">
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-  <header>
+
+    <header>
       <h1>Contact Us</h1>
-      <p>Have questions or feedback? We'd love to hear from you!</p>
-      <p>Get in touch with our team and let us know how we can improve your experience.</p>
+      <p>Have questions or feedback? We'd love to hear from you.</p>
+      <p>Drop a note and let us know how we can improve your experience.</p>
       <ul class="contact-info">
-        <li>
-          <a href="mailto:42779@Ocvts.org" aria-label="Email us">Email</a>
-        </li>
-        <li>
-          <a href="https://github.com/GitReigenOC" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-        </li>
+        <li><a href="mailto:42779@Ocvts.org" aria-label="Email us">Email</a></li>
+        <li><a href="https://github.com/GitReigenOC" target="_blank" rel="noopener noreferrer">GitHub</a></li>
       </ul>
-  </header>
+    </header>
+
     <section>
       <h2 class="section-title">Contact Form</h2>
-      <form
-        id="contact-form"
-        action="https://formspree.io/f/xwlvyeyk"
-        method="POST"
-        novalidate
-      >
-        <input type="hidden" name="_subject" value="New message from Verdikt">
-
+      <form id="contact-form" novalidate>
         <div class="form-field">
           <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            autocomplete="name"
-            required
-            aria-describedby="name-error"
-          >
+          <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error">
           <p class="field-error hidden" id="name-error"></p>
         </div>
 
         <div class="form-field">
           <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            autocomplete="email"
-            required
-            aria-describedby="email-error"
-          >
+          <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
           <p class="field-error hidden" id="email-error"></p>
         </div>
 
         <div class="form-field">
           <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            required
-            aria-describedby="message-error"
-          ></textarea>
+          <textarea id="message" name="message" rows="5" aria-describedby="message-error"></textarea>
           <p class="field-error hidden" id="message-error"></p>
         </div>
+
         <p class="form-status hidden" id="form-status" role="status"></p>
         <button type="submit">Send message</button>
       </form>

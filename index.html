@@ -3,58 +3,105 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Escodia</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="" type="image/png">
+    <link rel="icon" href="Images/LogoE.png" type="image/png">
     <script src="java.js" defer></script>
   </head>
   <body>
     <nav>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="categories.html">Categories</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="nav-inner">
+        <a class="nav-logo" href="index.html" aria-label="Escodia home">
+          <img src="Images/LogoE.png" alt="">
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <header>
-      <h1>Escodia</h1>
+
+    <header class="hero-banner">
+      <div class="hero-content">
+        <p class="hero-eyebrow">YOUR NEXT WORLD IS WAITING</p>
+        <h1>Escape into the <span>extraordinary.</span></h1>
+        <p>Discover anime-inspired destinations, neon-lit city nights, and unforgettable adventures beyond the ordinary.</p>
+        <a class="hero-link" href="#destinations">Explore destinations <span aria-hidden="true">&rarr;</span></a>
+      </div>
     </header>
-      <section>
-        <h1>Featured Travel Destinations</h1>
-          <div class="F-destinations" onclick="ToggleDetails()" role="button" tabindex="0">
-            <h1>Shibuya</h1>
-              <h3>Genre: Anime</h3>
-              <img src="Images/Shibuya.webp" alt="Shibuya Aftermath (JJK)">
-              <p>This resort has a crisp estimate baseline domain-wide thermal or thermobaric effects around 2,500 °C, while extreme outlier calculations stretch upwards of 8,000 °C to 800,000 °C. A perfect place for tans and amazing sights to see.</p>
-              <span class="Details">Click for more details.</span>
-          </div>
-          <div id="slide-d" class="Drawer">
-            <button class="close-btn" onclick="event.stopPropagation(); ToggleDetails();">&times;</button>
-          <div class="Drawer-stuff">
-            <h1>Sukuna is hosting an event that as well</h1>
-            <h2>Ready to enjoy a time of festevities with a humble host</h2>
-            <p>Destination is at Tokyo, Japan</p>
-            <p>Shibuya is a vibrant commercial and entertainment hub in Tokyo featuring iconic crosswalks, panoramic viewpoints, pop culture stores, and diverse dining</p>
-            <img src="Images/Shibuya.webp" alt="Re:Zero">
-          </section>
-      <section>
-            <div>
-              <div class="F-destinations" onclick="ToggleDetails2()" role="button" tabindex="0">
-              <h1>Luginica</h1>
-              <h3>Genre: Anime</h3>
-              <img src="Images/Shibuya.webp" alt="Re:Zero">
-              <p>This resort has a crisp estimate baseline domain-wide thermal or thermobaric effects around 2,500 °C, while extreme outlier calculations stretch upwards of 8,000 °C to 800,000 °C. A perfect place for tans and amazing sights to see.</p>
-              <span class="Details">Click for more details</span>
+
+    <main>
+      <section class="featured-section" id="destinations">
+        <h2>Featured Travel Destinations</h2>
+
+        <div class="destination-list">
+          <article class="destination-card" data-drawer="shibuya-drawer" tabindex="0" role="button" aria-expanded="false">
+            <img src="Images/Shibuya.webp" alt="Shibuya skyline">
+            <div class="destination-copy">
+              <p class="genre">TOKYO, JAPAN · ANIME</p>
+              <h3>Shibuya</h3>
+              <p>Step into a neon-lit world of iconic crosswalks, panoramic city views, pop-culture stores, and late-night dining.</p>
+              <span class="details">Discover Shibuya <span aria-hidden="true">&rarr;</span></span>
             </div>
-          <div id="slide-d2" class="Drawer2">
-            <button class="close-btn" onclick="event.stopPropagation(); ToggleDetails2();">&times;</button>
-          <div class="Drawer-stuff2">
-            <h1>Satella's blessing will be invoked on you after you get isekai'd here</h1>
-            <h2>Time for an amazing time where you get to start from zero (Many times)</h2>
+          </article>
+        </div>
+
+        <aside id="shibuya-drawer" class="drawer" aria-hidden="true">
+          <button type="button" class="close-btn" aria-label="Close destination details">&times;</button>
+          <div class="drawer-content">
+            <h2>Sukuna is hosting an event that as well</h2>
+            <h3>Ready to enjoy a time of festivities with a humble host</h3>
+            <p>Destination is at Tokyo, Japan</p>
+            <p>Shibuya is a vibrant commercial and entertainment hub in Tokyo featuring iconic crosswalks, panoramic viewpoints, pop culture stores, and diverse dining.</p>
+          </div>
+        </aside>
+
+        <div class="destination-list">
+          <article class="destination-card" data-drawer="luginica-drawer" tabindex="0" role="button" aria-expanded="false">
+            <img src="Images/Kingdom_Lugnica.webp" alt="Luginica-inspired landscape">
+            <div class="destination-copy">
+              <p class="genre">FANTASY WORLD · ANIME</p>
+              <h3>Luginica</h3>
+              <p>Enter a world of legends, dramatic skies, and unexpected adventures where every journey begins anew.</p>
+              <span class="details">Discover Luginica <span aria-hidden="true">&rarr;</span></span>
+            </div>
+          </article>
+        </div>
+
+        <aside id="luginica-drawer" class="drawer" aria-hidden="true">
+          <button type="button" class="close-btn" aria-label="Close destination details">&times;</button>
+          <div class="drawer-content">
+            <h2>Satella's blessing will be invoked on you after you get isekai'd here</h2>
+            <h3>Time for an amazing adventure where you get to start from zero.</h3>
             <p>Destination is at Luginica, Beyond the Waterfall</p>
-            <p>Luginica is a diversed place to enjoy, with thugs.. I mean archbishops.. I mean maw beasts.. I MEAN nice and law abiding citizens all around</p>
+            <p>Luginica is a diverse place to enjoy, with thugs... I mean archbishops... I mean maw beasts... I mean a wondrously unique world full of unforgettable characters and breathtaking scenery.</p>
           </div>
+        </aside>
+
+        <div class="destination-list">
+          <article class="destination-card" data-drawer="gotham-drawer" tabindex="0" role="button" aria-expanded="false">
+            <img src="Images/Gotham.jpg" alt="Gotham City">
+            <div class="destination-copy">
+              <p class="genre">CITY · GAME</p>
+              <h3>Gotham City</h3>
+              <p>Explore rain-soaked rooftops, shadowy streets, and a skyline that feels like a mystery waiting to unfold.</p>
+              <span class="details">Discover Gotham <span aria-hidden="true">&rarr;</span></span>
+            </div>
+          </article>
+        </div>
+
+        <aside id="gotham-drawer" class="drawer" aria-hidden="true">
+          <button type="button" class="close-btn" aria-label="Close destination details">&times;</button>
+          <div class="drawer-content">
+            <h2>Gotham after dark</h2>
+            <h3>A moody city break for fans of comic-book worlds and dramatic skylines.</h3>
+            <p>Destination: Gotham City</p>
+            <p>Follow the glow of the skyline through gothic streets, rooftop views, and hidden corners. Keep your camera ready—and your plans flexible—the city has a way of surprising you.</p>
           </div>
+        </aside>
       </section>
+    </main>
   </body>
 </html>

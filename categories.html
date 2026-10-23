@@ -3,31 +3,132 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Categories | Escodia</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="" type="image/png">
+    <link rel="icon" href="Images/LogoE.png" type="image/png">
     <script src="java.js" defer></script>
   </head>
   <body>
     <nav>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="nav-inner">
+        <a class="nav-logo" href="index.html" aria-label="Escodia home">
+          <img src="Images/LogoE.png" alt="">
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-<header>
-    <h1>Escodia</h1>
-</header>
+
+    <header class="category-hero">
+      <p class="hero-eyebrow">THE ESCODIA FIELD GUIDE</p>
+      <h1>Pick your <span>next escape.</span></h1>
+      <p>From neon city nights to worlds beyond the map, browse our destination collection and find the atmosphere that calls to you.</p>
+    </header>
+
     <main>
-        <section>
-        <h2>Categories</h2>
-        <h2>Anime</h3>
-        <div class="F-destinations">
-            <h3>Genre: Anime</h3>
-            <image src="Images/Shibuya.webp" alt="Shibuya Aftermath (JJK)">
+      <section class="reviews-section">
+        <div class="reviews-heading">
+          <div>
+            <p class="hero-eyebrow">EIGHT WORLDS. ENDLESS STORIES.</p>
+            <h2>Destination reviews</h2>
+          </div>
+          <p class="reviews-note">Sample editorial ratings and reviews created for this project.</p>
         </div>
-        </section>
+
+        <div class="review-grid">
+          <article class="review-card">
+            <img src="Images/Shibuya.webp" alt="A panoramic view of Shibuya">
+            <div class="review-copy">
+              <p class="genre">JAPAN · ANIME · CITY</p>
+              <h3>Shibuya, Tokyo</h3>
+              <p>Bright signs, busy crossings, and side streets packed with late-night discoveries make this a city that never runs out of energy.</p>
+              <div class="review-rating" aria-label="Rated 5 out of 5 stars"><span aria-hidden="true">★★★★★</span><strong>5.0</strong></div>
+              <blockquote>“Every turn feels like the opening scene of a new adventure.”</blockquote>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <img src="Images/Kingdom_Lugnica.webp" alt="A sweeping view of the fantasy kingdom of Lugnica">
+            <div class="review-copy">
+              <p class="genre">FANTASY · ANIME</p>
+              <h3>The Kingdom of Lugnica</h3>
+              <p>Green valleys, distant mountains, and storybook towns set the stage for a grand journey full of wonder.</p>
+              <div class="review-rating" aria-label="Rated 4.9 out of 5 stars"><span aria-hidden="true">★★★★★</span><strong>4.9</strong></div>
+              <blockquote>“The kind of place that makes you want to take the long way around.”</blockquote>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <img src="Images/Gotham.jpg" alt="Gotham's dark skyline at night">
+            <div class="review-copy">
+              <p class="genre">GOTHIC CITY · COMICS</p>
+              <h3>Gotham City</h3>
+              <p>Gothic rooftops and rain-glossed streets bring cinematic atmosphere to every nighttime wander.</p>
+              <div class="review-rating" aria-label="Rated 4.8 out of 5 stars"><span aria-hidden="true">★★★★★</span><strong>4.8</strong></div>
+              <blockquote>“Come for the skyline; stay for the moody, movie-like streets.”</blockquote>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <img src="Images/NightCity.webp" alt="A sprawling neon-lit futuristic city">
+            <div class="review-copy">
+              <p class="genre">SCI-FI · NIGHTLIFE</p>
+              <h3>Night City</h3>
+              <p>Immense towers, luminous billboards, and electric color create a future that feels alive after dark.</p>
+              <div class="review-rating" aria-label="Rated 4.9 out of 5 stars"><span aria-hidden="true">★★★★★</span><strong>4.9</strong></div>
+              <blockquote>“A dazzling maze—look up, and there’s always something new.”</blockquote>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <img src="Images/Old.webp" alt="A quiet, sunlit beach beside green hills">
+            <div class="review-copy">
+              <p class="genre">COASTAL ESCAPE · NATURE</p>
+              <h3>The Quiet Shore</h3>
+              <p>Trade the city rush for a peaceful coastline, rolling green hills, and the sound of waves along the sand.</p>
+              <div class="review-rating" aria-label="Rated 4.7 out of 5 stars"><span aria-hidden="true">★★★★★</span><strong>4.7</strong></div>
+              <blockquote>“The perfect slower chapter between bigger adventures.”</blockquote>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <img src="Images/RaccoonCity.webp" alt="A warning sign overlooking the burning skyline of Raccoon City">
+            <div class="review-copy">
+              <p class="genre">SURVIVAL HORROR · CITY</p>
+              <h3>Raccoon City</h3>
+              <p>Abandoned streets and an ominous skyline make this an atmospheric stop for brave fans of survival horror.</p>
+              <div class="review-rating" aria-label="Rated 4.6 out of 5 stars"><span aria-hidden="true">★★★★★</span><strong>4.6</strong></div>
+              <blockquote>“Unforgettable atmosphere—probably best explored before sunset.”</blockquote>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <img src="Images/UpsideDown.jpg" alt="A vivid otherworldly sky split by a bolt of lightning">
+            <div class="review-copy">
+              <p class="genre">SUPERNATURAL · OTHERWORLD</p>
+              <h3>The Upside Down</h3>
+              <p>A strange, storm-lit mirror world offers eerie beauty and an adventure far off the beaten path.</p>
+              <div class="review-rating" aria-label="Rated 4.8 out of 5 stars"><span aria-hidden="true">★★★★★</span><strong>4.8</strong></div>
+              <blockquote>“Beautifully bizarre. Bring a friend and keep your bearings.”</blockquote>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <img src="Images/Crystal.jpg" alt="A weathered Camp Crystal Lake welcome sign in a forest">
+            <div class="review-copy">
+              <p class="genre">LAKESIDE · THRILLER</p>
+              <h3>Camp Crystal Lake</h3>
+              <p>A secluded lake and deep forest make for a peaceful-looking retreat with a deliciously spooky edge.</p>
+              <div class="review-rating" aria-label="Rated 4.5 out of 5 stars"><span aria-hidden="true">★★★★★</span><strong>4.5</strong></div>
+              <blockquote>“Gorgeous woods, still water, and just enough campfire-story energy.”</blockquote>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
   </body>
 </html>
